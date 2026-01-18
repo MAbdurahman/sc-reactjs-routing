@@ -11,7 +11,6 @@ It also uses font-awesome for menu icon.</p>
 - Routing with react-router-dom
 - Manages meta-data with react-helmet
 - Menu button icon with font-awesome
-- Responsive design
 
 ### To install dependencies
 ```shell
