@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-export const LogoImg = styled.img`
+export const LogoImage = styled.img`
   align-self: start;
   width: 208px;
    @media (max-width: 900px) {
@@ -11,39 +11,40 @@ export const LogoImg = styled.img`
 `;
 
 export const NavbarWrapper = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: hsl(210, 0%, 18%);
-  padding: 1em;
-  position: relative;
-   transition: 0.333s ease-in-out;
-  @media (max-width: 704px) {
-    flex-direction: column;
-    padding: 1rem;
-     font-size: 1.5rem;
-  }
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: hsl(210, 0%, 18%);
+   padding: 1em;
+   transition: all 0.5s cubic-bezier(0.1, 0.7, 0.6, 0.9);
+   @media (max-width: 704px) {
+      flex-direction: column;
+      padding: 1rem;
+      font-size: 1.5rem;
+
+   }
 `;
 
 export const NavLinkWrapper = styled.div`
-   transition: 0.333s ease-in-out;
+   transition: all 0.5s cubic-bezier(0.1, 0.7, 0.6, 0.9);
   @media (max-width: 704px) {
     display: ${(props) => (!props.active ? 'none' : 'block')};
     text-align: center;
     padding: 2rem 0;
-     transition: 0.333s ease-in-out;
+     transition: all 0.5s cubic-bezier(0.1, 0.7, 0.6, 0.9);
   }
 `;
 
 export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
    font-weight: 800;
-  transition: 0.333s ease-in-out;
   color: hsl(210, 0%, 98%);
   margin-left: 2rem;
+  transition: all 0.5s cubic-bezier(0.1, 0.7, 0.6, 0.9);
    
   &:last-child {
-    background: hsl(196.18, 77.39%, 54.9%);
+    background: hsl(196, 77%, 55%);
     padding: 0.5rem 1rem;
     border-radius: 24px;
     &:hover {
@@ -55,11 +56,11 @@ export const StyledNavLink = styled(NavLink)`
   }
 
   &.${(props) => props.activeclassname} {
-    color: hsl(196.18, 77.39%, 54.9%);
+    color: hsl(196, 77%, 55%);
   }
 
   &:hover {
-    color: hsl(196.18, 77.39%, 54.9%);
+    color: hsl(196, 77%, 55%);
   }
 
   @media (max-width: 704px) {

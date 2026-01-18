@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Logo from '../../Logo/index.jsx';
+import {Link} from 'react-router-dom';
 import {
    NavbarWrapper,
    StyledFontAwesomeIcon,
@@ -28,7 +29,7 @@ export default function Navbar() {
       <section className='utils-container-fluid navbar-section'>
          <div className='utils-container'>
             <NavbarWrapper>
-               <Logo/>
+                  <Logo/>
                <StyledFontAwesomeIcon icon={faBars}
                                       onClick={() => setActive(!active)}/>
                <NavLinkWrapper active={active}>
