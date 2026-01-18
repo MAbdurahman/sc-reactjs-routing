@@ -39,3 +39,5 @@ or
 ```shell
 yarn build
 ```
+
+![Image](https://github.com/user-attachments/assets/df18dabe-77f0-4a37-9c8c-3821f53c052b)
