@@ -5,6 +5,9 @@ import styled from "styled-components";
 export const LogoImg = styled.img`
   align-self: start;
   width: 208px;
+   @media (max-width: 900px) {
+      width: 128px;
+   }
 `;
 
 export const NavbarWrapper = styled.nav`
@@ -14,7 +17,7 @@ export const NavbarWrapper = styled.nav`
   background: hsl(210, 0%, 18%);
   padding: 1em;
   position: relative;
-   transition: all 0.333s ease;
+   transition: 0.333s ease-in-out;
   @media (max-width: 704px) {
     flex-direction: column;
     padding: 1rem;
@@ -23,12 +26,12 @@ export const NavbarWrapper = styled.nav`
 `;
 
 export const NavLinkWrapper = styled.div`
-   transition: all 0.333s ease;
+   transition: 0.333s ease-in-out;
   @media (max-width: 704px) {
     display: ${(props) => (!props.active ? 'none' : 'block')};
     text-align: center;
     padding: 2rem 0;
-     transition: all 0.333s ease;
+     transition: 0.333s ease-in-out;
   }
 `;
 

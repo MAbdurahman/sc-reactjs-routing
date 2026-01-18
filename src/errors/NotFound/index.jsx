@@ -10,7 +10,7 @@ export default function NotFound() {
          <MetaData title="Not Found"/>
          <div className={styles.not__found__page}>
             <div className={styles.not__found__container}>
-               <h1 className={styles.not__found__heading}>404</h1>
+               <h2 className={styles.not__found__heading}>404</h2>
                <p className={styles.not__found_paragraph}>Page Not Found!</p>
                <Link to='/home' className={styles.not__found__button}>
                   Go To HomePage
